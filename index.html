@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo Apps</title>
+</head>
+
+
+<body>
+    <section class="container">
+        <div class="logo">
+            <img src="images//todo logo.jpg" alt="Logo">
+        </div>
+        <h1>My Todo</h1>
+
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" class="new-task-box" id="new-task" />
+            <input type="submit" class="add-task" id="addTask" value="Add Task">
+        </form>
+
+        <div class="todo-list box">
+            <h2>Incomplete Tasks</h2>
+            <ul id="items">
+                <li class="items">
+                    <input type="checkbox" /> <label> Task Name</label>
+                </li>
+                <li class="items">
+                    <input type="checkbox" /> <label> Task Name</label>
+                </li>
+                <li class="items">
+                    <input type="checkbox" /> <label> Task Name</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- /todo list closed -->
+
+        <div class="complete-list box">
+            <h2>Complete Tasks</h2>
+            <ul>
+                <li class="items">
+                    Task Name
+                    <button class="delete"> Delete</button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- linked js file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
